@@ -1,0 +1,59 @@
+<div id="CRUD-div">
+<h1><u>Insert Data Form</u></h1>
+<form action="/create" method="POST">
+    <table cellpadding="10" cellspacing="40">
+        <tr>
+            <td><label for="name">Name *</label><br>
+                <input type="text" name="name" id="name">
+            </td>
+            <td>  <label for="food">Food Type *</label><br>
+                <select name="food" id="food">
+                    <option value="South Indian">South Indian</option>
+                    <option value="North Indian">North Indian</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="phone">Moblie Number *</label><br>
+                <input type="text" name="phone" id="phone">
+            </td>
+
+            <td> <label for="facility">Free Extra Facility *</label><br>
+                <select name="facility" id="facility">
+                    <option value="gym">Gym</option>
+                    <option value="laoundry">Loundry</option>
+                    <option value="indoorgame">Indoor Games</option>
+                </select>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td><label for="address">Addresss *</label><br>
+                <input type="text" name="address" id="address"></td>
+            <td><label for="payment">Payment Mode *</label><br>
+                <select name="payment" id="payment">
+                    <option value="googlepay">Google Pay</option>
+                    <option value="paytm">Paytm</option>
+                    <option value="card ">Card</option>
+                </select><br><br></td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="members">No of Members *</label><br>
+                 <input type="text" name="members" id="members">
+            </td>
+
+            <td>
+                <label for="amount">Amount to be Paid *</label><br>
+                <input type="text" name="amount" id="amount">
+            </td>
+
+        </tr>
+    </table>
+
+    <input type="submit"><br><br><br>
+    
+</form>
+</div>

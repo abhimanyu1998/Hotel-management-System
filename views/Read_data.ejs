@@ -1,0 +1,63 @@
+<div id="CRUD-div">
+    <h1><u>Read Data Form</u></h1><br><br><br>
+   
+    <form action="/read/readuser" method="GET">
+        <label for="name">Enter The User Name</label><br><br>
+        <input type="text" id="name" name="name">
+        <br>
+        <input  style="margin-top: 30px;margin-left: 5px; height: 50px;
+        width: 200px;" type="submit" value="Search Record">
+    </form>
+
+
+    <% if(Users!=""){%>
+    <div id="user-detail">
+        <table cellspacing="15" >
+            <thead>
+                <tr><span style="width: 100%;background-color: black;height: 45px; color:white;text-align: center; line-height: 2;">Coutomer Detail</span></tr>
+            </thead>
+            <tbody >
+               <tr>
+                <% for(let User of Users) {%>
+                <td><b>Name</b></td>
+                <td><%=User.name%></td>
+                
+            </tr>
+            <tr>
+                <td><b>Mobile</b></td>
+                <td><%=User.phone%></td>
+            </tr>
+            <tr>
+                <td><b>Address</b></td>
+                <td><%=User.address%></td>
+            </tr>
+            <tr>
+                <td><b>Free Facility</b></td>
+                <td><%=User.facility%></td>
+            </tr>
+            <tr>
+                <td><b>Members</b></td>
+                <td><%=User.members%></td>
+            </tr>
+            <tr>
+                <td><b>Food Type</b></td>
+                <td>South Indian</td>
+            </tr>
+            <tr>
+                <td><b>Payment Mode</b></td>
+                <td>Google Pay</td>
+            </tr>
+            <tr>
+                <td><b>Total Amount</b></td>
+                <td>$468</td>
+            </tr>
+            <%}%>
+
+            </tbody>
+        </table>
+    </div>
+    <%}%>
+
+
+
+</div>

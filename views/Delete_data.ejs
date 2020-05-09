@@ -1,0 +1,38 @@
+<div id="CRUD-div">
+    <h1><u>Delete Data Page</u></h1>
+
+   <% if(Users!=""){%>
+    <table id="delete-table" border="1px solid black"  cellspacing="0">
+        <thead>
+            <tr style="background-color: black;"> 
+                <th>Sr no</th>
+                <th>Coustomer Id</th>
+                <th>Name</th>
+                <th>Delete</th>
+            </tr>
+            <tbody>
+                <% for(let user of Users ){%>
+
+             
+                    <tr>
+                        <td>1</td>
+                        <td><%=user.name%></td>
+                        <td><%=user.phone%></td>
+                        <td><a href="/delete/<%=user._id%>">Delete</a></td>
+                    </tr>
+    
+                    <%}%>
+            </tbody>
+        </thead>
+    </table>
+
+    <%}else {%>
+        <div id="data-notfound">
+            No Data Found in database
+      </div>
+
+        <%}%>
+
+
+
+</div>

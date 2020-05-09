@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#outer-div #header li
+{
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+#outer-div #header li:hover{
+    border-bottom: 1px solid rgb(18, 3, 235);
+    color :rgb(0, 132, 255)
+}
+
+#outer-div #header ul{
+    text-align: right;
+}
+
+#outer-div #hotel-name
+{
+    background-image: url('../images/Hotelname.png');
+    height: 50px;
+    width: 150px;
+    margin-top: 6px;
+    margin-left: 15px;
+    background-size: contain;
+    background-color: black;
+    position: absolute;
+
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+span{
+    display: inline-block;
+}
+
+#main-div
+{
+    background-color: #480B0A;
+    height: auto;
+    width:100%;
+}
+
+#outer-div
+{
+    background-color: #DDDDDD;
+    height: 100%;
+    width:900px;
+    margin-left: 20%;
+    margin-top: 12px;
+    min-height: 600px;
+}
+
+#header
+{
+
+    background-color: #1e1e1e;
+    width: 100%;
+    height:60px;
+    line-height: 60px;
+
+}
+
+
+#outer-div  #slider-image-box
+{
+    height: 330px;
+    width: 93%;
+    margin-top: 25px;
+    margin-left: 24px;
+    margin-bottom: 50px;
+    background: url('../images/sliderimage.jpeg');
+    background-size: cover;
+    border: 8px solid white;
+
+}
+
+#outer-div .three-img-boxes
+{
+    height: 350px;
+    width: 260px;
+    background-color: white;
+    margin-left: 26px;
+    margin-right: 5px;
+}
+
+
+#outer-div .three-img-boxes .heading-box
+{
+    height: 60px;
+    border-radius: 6px;
+    width: 205px;
+    margin-top: 5px;
+    background-color: #493D37;
+    margin-left: 26px;
+    color: white;
+    font-size: 30px;
+    line-height: 2;
+    font-weight: 500;
+    text-align: center;
+    /* margin-right: 5px; */
+}
+
+#outer-div .three-img-boxes .img-box
+{
+    height: 240px;
+    border-radius: 6px;
+    width: 240px;
+    margin-top: 3px;
+    margin-left: 10px;
+    
+    /* margin-right: 5px; */
+}
+
+#outer-div .three-img-boxes img{
+    width: 100%;
+    height: 70%;
+}
+
+#outer-div .three-img-boxes .read-more
+{
+    background: none;
+    border: none;
+    color: white;
+    background-color: #493D37;
+    padding: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
+    float: right;
+    margin-right: 7px;
+    font-size: 20px;
+    border-radius: 22px ;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+#outer-div #welcome-description
+{
+    width: 555px;
+    height: 270px;
+    background-color: white;
+    margin-left: 26px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#outer-div #welcome-description h1{
+    margin-left: 10px;
+    color: rgb(240, 108, 0);
+    font-size: 35px;
+}
+
+#outer-div #welcome-description #description-img
+{
+    width: 200px;
+    height: 190px;
+    background-color: black;
+    margin-left: 10px;
+    /* /* margin-left: 26px; */
+    background: url('../images/pic1.jpg');
+    background-size: 100% 100%;
+}
+#outer-div #welcome-description #description-text
+{
+    width: 320px;
+    height: 190px;
+    margin-top: 10px;
+    background-color: #DAD2BB;
+    margin-left: 6px;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 15px;
+    font-size: 17px;
+}
+
+#outer-div  #price-box
+{
+    height: 270px;
+    width: 260px;
+    background-color: white;
+    margin-left: 30px;
+    top: 15px;
+    margin-bottom: -27px;
+    overflow: auto;
+
+
+}
+
+#outer-div  #price-box #price-content
+{
+    height: 160px;
+    width: 240px;
+    background-color: #DAD2BB;
+    margin-left: 10px;
+    margin-top: 20px;
+   overflow: auto;
+   font-size: 20px;
+   padding: 10px;
+   line-height: 1.5;
+   box-sizing: border-box;
+
+
+}
+
+#price-heading
+{
+    height: 60px;
+    border-radius: 6px;
+    width: 205px;
+    margin-top: 5px;
+    background-color: #493D37;
+    margin-left: 26px;
+    color: white;
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+
+    font-weight: 500;
+}
+
+#outer-div #footer
+{
+    height: 100px;
+    width:100%;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding:25px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* ======================================================================================================= */
+
+/* Insert Div */
+
+#CRUD-div
+{
+    margin-left: 50px;
+    min-height: 500px;
+}
+
+#CRUD-div input[type="text"]
+{
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+}
+
+#CRUD-div label{
+    font-size: 22px;
+}
+
+#CRUD-div select
+{
+    height: 30px;
+    width:250px;
+    font-size: 18px;
+}
+
+#CRUD-div input[type="submit"]
+{
+    background:none;
+    outline: none;
+    border: none;
+    border: 1px solid;
+    border-radius: 28px;
+    width:300px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    margin-left: 180px;
+    cursor: pointer;
+
+}
+
+#CRUD-div input[type="submit"]:hover
+{
+    background-color: #30336b;
+}
+
+
+
+#CRUD-div #delete-table
+{
+    margin-left: 15%;
+    margin-top: 60px;
+    height: 10px;
+    width: 500px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#CRUD-div #delete-table thead
+{
+    background-color: black;
+    color: white;
+}
+
+#CRUD-div #delete-table tr:nth-child(odd) {
+  }
+  
+  #CRUD-div #delete-table tr:nth-child(even) {
+    background: #b4b4b4;
+  }
+
+#user-detail
+{
+    height: 450px;
+    width: 400px;
+    position: absolute;
+    border: 1px solid black;
+    margin-top: -220px;
+    margin-left: 30%;
+    font-size: 24px;
+    background-color: white;
+}
+
+
+
+
+#data-notfound
+{
+    height: 100;
+    width:250px;
+    padding: 30px;
+    margin-left: 200px;
+    margin-top: 50px;
+    background-color: #fab1a0;
+    color:#d63031;
+   border-radius: 10px;
+    font-size: 22px;
+}

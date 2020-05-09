@@ -1,0 +1,50 @@
+<div id="CRUD-div">
+    <h1><u>Update  Data Form</u></h1>
+
+    <form action="/update/savetodatabase" method="POST">
+        <table cellpadding="10" cellspacing="40">
+            <tr>
+                <td><label for="name">Name *</label><br>
+                    <input type="text" name="name" id="name" value="<%=User.name%>">
+                </td>
+                <td>  <label for="food">Food Type *</label><br>
+                        <input type="text" name="food" id="food" value="<%=User.food%>">
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="phone">Moblie Number *</label><br>
+                    <input type="text" name="phone" id="phone" value="<%=User.phone%>">
+                </td>
+    
+                <td> <label for="facility">Free Extra Facility *</label><br>
+                   <input type="text" value="<%=User.facility%>" id="facility" name="facility">
+                </td>
+            </tr>
+    
+    
+            <tr>
+                <td><label for="address">Addresss *</label><br>
+                    <input type="text" name="address" id="address" value="<%=User.address%>"></td>
+                <td><label for="payment">Payment Mode *</label><br>
+                    <input type="text" value="<%=User.payment%>" name="payment" id="payment"><br><br></td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <label for="members">No of Members *</label><br>
+                     <input type="text" name="members" id="members" value="<%=User.members%>">
+                </td>
+    
+                <td>
+                    <label for="amount">Amount to be Paid *</label><br>
+                    <input type="text" name="amount" id="amount" value="<%=User.amount%>">
+                </td>
+    
+                <input type="hidden" value="<%=id%>" name="id">
+            </tr>
+        </table>
+    
+        <input type="submit"><br><br><br>
+    
+    </form>
+    </div>
