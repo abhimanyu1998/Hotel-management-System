@@ -1,6 +1,8 @@
 const mongoose=require('mongoose');//Importing The moongoose library
 
-mongoose.connect('mongodb://localhost/hotel_db');//Create connection with database
+// const db= 'mongodb://localhost/hotel_db';
+
+mongoose.connect('mongodb+srv://abhiman:herohere@cluster0-8s4cf.mongodb.net/registration?retryWrites=true&w=majority');//Create connection with database
 
 const data_base=mongoose.connection;
 

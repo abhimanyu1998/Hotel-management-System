@@ -1,5 +1,5 @@
 const express=require('express');                               //Using the Express Library
-const port=8000;                                                //Port Number On which Server will Run
+const port= (process.env.PORT ||8000);                                                //Port Number On which Server will Run
 
 
 const app=express(); 
